@@ -1,2 +1,0 @@
-# fyyur
-Site for musicians
