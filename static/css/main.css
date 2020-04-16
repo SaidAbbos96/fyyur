@@ -275,3 +275,15 @@ p.warning-text {
     color: #ff5e00;
     cursor: help;
 }
+
+img.myphoto {
+    width: 200px;
+}
+
+span.xbutt {
+    position: absolute;
+    color: #c70505;
+    right: 20px;
+    top: -10px;
+    font-size: 20px;
+}

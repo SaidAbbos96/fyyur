@@ -76,25 +76,11 @@
             </div>
         </div>
         <style>
-            img.myphoto {
-                width: 200px;
-            }
+
         </style>
         <!-- Begin page content -->
         <main id="content" role="main" class="container">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-1">
-                    <img src="../../static/img/SaidAbbos.jpg" class="myphoto" alt="Saidabbos Khudoykulov">
-                </div>
-                <div class="col-md-6">
-                    <p>
-                        Sorry for my English.
-                    </p>
-                    <p>Sorry if I did something wrong with this project. I just have a problem with the English language. And I had to look for and learn from the Internet a lot of the necessary skills for creating this project. but I won’t leave it all
-                        day after day. I study English and develop my IT and programming skills.</p>
-                </div>
 
-            </div>
 
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div class="alert alert-block alert-info fade in">
@@ -119,7 +105,11 @@
     </script>
     <script type="text/javascript" src="/static/js/libs/bootstrap-3.1.1.min.js" defer></script>
     <script type="text/javascript" src="/static/js/plugins.js" defer></script>
-
+    <script>
+        $('.xbutt').click(function() {
+            $('#thanksDiv').remove();
+        });
+    </script>
 </body>
 
 </html>
