@@ -35,7 +35,7 @@ db = SQLAlchemy(app)
 
 # TODO: connect to a local postgresql database = done.
 migrate = Migrate(app, db)
-# db.create_all()
+db.create_all()
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 
 #MODIFICATIONS status
