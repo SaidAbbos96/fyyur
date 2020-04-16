@@ -1,1 +1,105 @@
 
+2020-04-13 15:30:50,113 INFO: errors [in c:\Users\SaidAbbos\Documents\GitHub\fyyur\app.py:507]
+2020-04-13 16:11:47,369 INFO: errors [in c:\Users\SaidAbbos\Documents\GitHub\fyyur\app.py:514]
+2020-04-13 16:11:51,528 INFO: errors [in c:/Users/SaidAbbos/Documents/GitHub/fyyur/app.py:514]
+2020-04-13 16:52:53,162 INFO: errors [in c:/Users/SaidAbbos/Documents/GitHub/fyyur/app.py:524]
+2020-04-13 16:52:55,595 ERROR: Exception on /venues/create [GET] [in C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/SaidAbbos/Documents/GitHub/fyyur/app.py", line 220, in create_venue_form
+    return render_template('forms/new_venue.html', form=form)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %} {% block title %}New Venue{% endblock %} {% block content %}
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 38, in block "content"
+    <label for="website">Website</label> {{ form.website(class_ = 'form-control', placeholder='http://', id=form.state, autofocus = true) }}
+jinja2.exceptions.UndefinedError: 'forms.VenueForm object' has no attribute 'website'
+2020-04-13 19:04:06,314 INFO: errors [in c:\Users\SaidAbbos\Documents\GitHub\fyyur\app.py:532]
+2020-04-13 19:04:06,878 ERROR: Exception on /venues/create [GET] [in C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\app.py", line 225, in create_venue_form
+    return render_template('forms/new_venue.html', form=form)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %} {% block title %}New Venue{% endblock %} {% block content %}
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 37, in block "content"
+    <label for="website">Website</label> {{ form.website(class_ = 'form-control', placeholder='http://', id=form.state, autofocus = true) }}
+jinja2.exceptions.UndefinedError: 'forms.VenueForm object' has no attribute 'website'
+2020-04-13 19:04:11,133 ERROR: Exception on /venues/create [GET] [in C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\app.py", line 225, in create_venue_form
+    return render_template('forms/new_venue.html', form=form)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\SaidAbbos\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %} {% block title %}New Venue{% endblock %} {% block content %}
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\layouts\main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 37, in block "content"
+    <label for="website">Website</label> {{ form.website(class_ = 'form-control', placeholder='http://', id=form.state, autofocus = true) }}
+jinja2.exceptions.UndefinedError: 'forms.VenueForm object' has no attribute 'website'
