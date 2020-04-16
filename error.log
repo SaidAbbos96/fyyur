@@ -103,3 +103,4 @@ Traceback (most recent call last):
   File "c:\Users\SaidAbbos\Documents\GitHub\fyyur\templates\forms\new_venue.html", line 37, in block "content"
     <label for="website">Website</label> {{ form.website(class_ = 'form-control', placeholder='http://', id=form.state, autofocus = true) }}
 jinja2.exceptions.UndefinedError: 'forms.VenueForm object' has no attribute 'website'
+2020-04-16 19:08:40,995 INFO: errors [in c:\Users\SaidAbbos\Documents\GitHub\fyyur\app.py:672]
